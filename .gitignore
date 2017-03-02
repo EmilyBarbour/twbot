@@ -1,0 +1,7 @@
+*BAK*.*
+*.pyc
+crontab*.*
+config.txt
+*.log
+*.sh
+.DS_Store
