@@ -1,0 +1,8 @@
+CONSUMER_KEY =
+CONSUMER_SECRET =
+TOKEN =
+TOKEN_SECRET =
+
+# find the user id somewhere
+USER =
+OAUTH_USER =

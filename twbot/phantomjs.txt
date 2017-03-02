@@ -1,0 +1,6 @@
+var WebPage = require('webpage');
+page = WebPage.create();
+page.open('https://twitter.com/intent/like?tweet_id=463440424141459456');
+page.onLoadFinished = function() {
+   page.render('googleScreenShot' + '.png');
+   phantom.exit();}
