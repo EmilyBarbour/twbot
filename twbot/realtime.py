@@ -16,21 +16,23 @@ LOGGER = logging.getLogger(__name__)
 LOGGER.addHandler(handler)
 LOGGER.setLevel(logging.DEBUG)
 
+
 class StreamDisconnectError(IOError):
     """ Twitter streams should last forever
         but sometimes does not :( """
     pass
 
 
-def check_retries(i):
-    if i>5:
+def check_retries(tries):
+    if tries > 5:
         return False
     return True
 
 if __name__ == '__main__':
     LOGGER.log(BOT_NUM, 'STARTED BOT AT {}'.format(datetime.datetime.now()))
     tweets = twtrbot.TwitterStream(LOGGER, config_file='/home/ec2-user/twtrbot/config.txt')
-    retries = 1; x = True
+    retries = 1
+    x = True
     while x:
         try:
             tweets.start_stream()
