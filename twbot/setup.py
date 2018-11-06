@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='twtrbot',
-    version='0.1',
+    version='0.2',
     packages=['twtrbot'],
     url='https://github.com/emilybarbour/twtrbot',
     license='MIT',
