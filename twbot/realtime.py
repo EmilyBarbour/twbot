@@ -6,7 +6,7 @@ import requests
 import time
 from twtrbot import twtrbot
 
-BOT_NUM=20
+BOT_NUM=25
 logging.addLevelName(BOT_NUM, "BOTLOG")
 # Add the log message handler to the logger
 LOG_FILENAME = "/home/ec2-user/log/twtrbot.log"
